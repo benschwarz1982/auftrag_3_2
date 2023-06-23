@@ -1,5 +1,7 @@
 # auftrag_3_2
 
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
+
 docker pull nginx:latest --platform linux/amd64
 
 docker tag nginx:latest ghcr.io/benschwarz1982/nginx:v1
