@@ -1,5 +1,9 @@
 # auftrag_3_2
 
+export CR_PAT=<Github_Token>
+
+echo $CR_PAT | docker login ghcr.io -u <githubusername> --password-stdin
+
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
 docker pull nginx:latest --platform linux/amd64
